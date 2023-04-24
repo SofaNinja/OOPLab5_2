@@ -1,9 +1,8 @@
 package org.example.io;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-public class IO implements ArrayReader{
+public class Input implements ArrayReader{
     @Override
     public int[][] readTwoDimensionalArray(String fileName) {
         try (BufferedReader in = new BufferedReader(new

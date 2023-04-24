@@ -28,17 +28,4 @@ public class Processor implements ProcessArray {
         }
         return max;
     }
-    @Override
-    public void processArray(int[][] array) {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                if ((i + j > 98) && (i - j > -1)) {
-                    System.out.printf("%5d", array[i][j]);
-                } else {
-                    System.out.printf("%5d", 0);
-                }
-            }
-            System.out.println();
-        }
-    }
 }
